@@ -18,34 +18,24 @@ export default function Home({ data }) {
 const HOMEPAGE_QUERY = `
 query HomePage($limit: IntType){
   allProducts(first: $limit){
-    createdAt
     id
     slug
     bought
     _status
     name
     price
-    description
-    category {
-      name
-    }
     image {
       id
-      width
-      height
-      size
-      alt
-      url
       responsiveImage(imgixParams: { fit: crop, w: 300, h: 300, auto: format }){
         srcSet
-       webpSrcSet
-       sizes
-       src
-       width
-       height
-       aspectRatio
-       alt
-       base64
+        webpSrcSet
+        sizes
+        src
+        width
+        height
+        aspectRatio
+        alt
+        base64
      }
     }
   }
@@ -58,6 +48,6 @@ export async function getStaticProps() {
   });
   return {
     props: { data }, // will be passed to the page component as props
-    revalidate: 10
+    revalidate: 10,
   };
 }

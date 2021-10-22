@@ -13,7 +13,7 @@ export default function Products({ products }) {
             <div>
               <Image
                 data={product.image.responsiveImage}
-                alt={product.image.alt}
+                alt={product.image.responsiveImage.alt}
               />
               <h3>{product.name}</h3>
               <p>Preço: R$<span className='valor'>{product.price} </span></p>
