@@ -1,0 +1,32 @@
+{
+    "createdAt": "2021-10-21T14:28:13Z",
+    "id": "67093632",
+    "slug": "esmeralda-grande",
+    "bought": true,
+    "_status": "published",
+    "name": "Esmeralda grande",
+    "price": 1235.14,
+    "description": "Esmeralda de origem x\nLapidada por: ze\ndimensão: 5x8x7/cm\ncor: verde\n",
+    "category": {
+        "name": "Esmeralda"
+    },
+    "image": {
+        "id": "27996537",
+        "width": 241,
+        "height": 209,
+        "size": 7815,
+        "alt": "Foto da esmeralda",
+        "url": "https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg",
+        "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&dpr=0.25&fit=crop&h=300&w=300 75w,https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&dpr=0.5&fit=crop&h=300&w=300 150w,https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&dpr=0.75&fit=crop&h=300&w=300 225w,https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&fit=crop&h=300&w=300 300w",
+            "webpSrcSet": "https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&dpr=0.25&fit=crop&fm=webp&h=300&w=300 75w,https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&dpr=0.5&fit=crop&fm=webp&h=300&w=300 150w,https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&dpr=0.75&fit=crop&fm=webp&h=300&w=300 225w,https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&fit=crop&fm=webp&h=300&w=300 300w",
+            "sizes": "(max-width: 300px) 100vw, 300px",
+            "src": "https://www.datocms-assets.com/57174/1634826313-esmeralda2.jpg?auto=format&fit=crop&h=300&w=300",
+            "width": 300,
+            "height": 300,
+            "aspectRatio": 1,
+            "alt": "Foto da esmeralda",
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLFQoTDh8YGBINDhoQHREkIxUuGBwVFisdJysjIx1AHRYiMDUlKC0vMjIyHSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIyg7MDs7MDs7Lzs1Oy8vNjwvLzs7Ly8vLy8vOy8vOy8vNS87NTs7NTsvOzsvLy87Ozs7L//AABEIABgAGAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAABQcGA//EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgMEBRIGESIxkf/EABcBAQEBAQAAAAAAAAAAAAAAAAMBBAL/xAAbEQEAAgIDAAAAAAAAAAAAAAABAAMCERITMf/aAAwDAQACEQMRAD8A1nJWm14vIqPXzULpddgvPlj5BXfp36WX467khly1+2vfxDZbwSZ7b+tDXs22K22RnYKKDiZpHQt2RKOyPjlslfKUm2WkELn2cfibNuGBEUQZygyxWqCJoACIiss//9k="
+        }
+    }
+}

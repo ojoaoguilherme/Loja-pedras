@@ -22,6 +22,11 @@ const ProductsStyle = styled.div`
     p{
         font-size: 26px;
     }
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 5px 7px 6px 3px #B5B5B5;
+    }
   }
 
   @media (max-width: 460px) {

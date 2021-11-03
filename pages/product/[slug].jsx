@@ -1,12 +1,10 @@
-import { codeNodeType } from "datocms-structured-text-utils";
-import { useRouter } from "next/router";
 import { request } from "../../lib/datocms";
+import Product from "../../Components/Product/Product";
 
-export default function Product({product}) {
-  console.log(product.name)
+export default function ProductPage({ product }) {
   return (
     <>
-      <h1>Hola mundo</h1>
+      <Product product={product} />
     </>
   );
 }
@@ -52,7 +50,6 @@ query MyQuery($param: String) {
     _status
     name
     price
-    description
     category {
       name
     }
@@ -75,22 +72,28 @@ query MyQuery($param: String) {
         base64
       }
     }
+    description{
+      value
+      blocks{
+         __typename
+        
+      }
+    }
   }
 }
 `;
 
-export async function getStaticProps({params}) {
-  const slug = params.slug
-  console.log(slug)
+export async function getStaticProps({ params }) {
+  const slug = params.slug;
+  console.log(slug);
   const data = await request({
     query: PRODUCT_INFO,
-    variables: {param: slug}
+    variables: { param: slug },
   });
   return {
     props: {
-      product: data.product
+      product: data.product,
     },
     revalidate: 10, // In seconds
   };
 }
-
