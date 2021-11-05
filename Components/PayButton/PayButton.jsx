@@ -1,8 +1,10 @@
 import React from "react";
 import { PayPalButton } from "react-paypal-button-v2";
 import createRecord from "../../lib/orderAPI";
+import updateProductStatus from "../../lib/updateProduct";
 
 export default function PayButton({ product }) {
+  console.log(product.id);
   return (
     <div>
       <PayPalButton
@@ -10,9 +12,9 @@ export default function PayButton({ product }) {
         // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
         onSuccess={(details, data) => {
           alert("Transaction completed by " + details.payer.name.given_name);
-          
+
           // OPTIONAL: Call your server to save the transaction
-          createRecord(details)
+          createRecord(details).then(updateProductStatus(product));
         }}
         options={{
           clientId:
