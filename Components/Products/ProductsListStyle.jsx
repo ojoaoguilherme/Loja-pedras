@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProductsStyle = styled.div`
+const ProductsListStyle = styled.div`
   display: grid;
   text-align: center;
   width: 80%;
@@ -35,4 +35,4 @@ const ProductsStyle = styled.div`
   }
 `;
 
-export default ProductsStyle;
+export default ProductsListStyle;
