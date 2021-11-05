@@ -19,7 +19,15 @@ export default function Product({ product }) {
           {product.name} - R${product.price}
         </h3>
         <StructuredText data={product.description.value} />
-        <PayButton product={product} />
+        {product.bought ? (
+          <div className="product-unavailable">
+            <p>Indisponível</p>
+          </div>
+        ) : (
+          <div>
+            <PayButton product={product} />
+          </div>
+        )}
       </div>
     </ProductStyle>
   );
