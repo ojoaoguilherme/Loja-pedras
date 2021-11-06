@@ -14,9 +14,17 @@ export default function Products({ products }) {
                 alt={product.image.responsiveImage.alt}
               />
               <h3>{product.name}</h3>
-              <p>
-                Preço: R$<span className="valor">{product.price} </span>
-              </p>
+              {product.bought ? (
+                <div className="product-unavailable">
+                  <p>Indisponível</p>
+                </div>
+              ) : (
+                <div>
+                  <p>
+                    Preço: R$<span className="valor">{product.price}</span>
+                  </p>
+                </div>
+              )}
             </div>
           </Link>
         </div>

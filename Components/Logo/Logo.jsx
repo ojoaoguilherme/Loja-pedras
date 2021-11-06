@@ -12,7 +12,7 @@ export default function Logo() {
   return (
     <LogoStyle>
       <Link passHref href="/">
-        <h1>Suas Joias</h1>
+        <h1>Loja de Pedras</h1>
       </Link>
     </LogoStyle>
   );
