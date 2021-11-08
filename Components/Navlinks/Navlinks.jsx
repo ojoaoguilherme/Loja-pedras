@@ -8,27 +8,17 @@ export default function Navlinks({open}) {
       <ul>
         <li>
           <Link passHref href="#">
-            Homens
-          </Link>
-        </li>
-        <li>
-          <Link passHref href="#">
-            Mulheres
-          </Link>
-        </li>
-        <li>
-          <Link passHref href="#">
-            A caminho
-          </Link>
-        </li>
-        <li>
-          <Link passHref href="#">
             Pedras Lapidadas
           </Link>
         </li>
         <li>
           <Link passHref href="#">
             Pedras Brutas
+          </Link>
+        </li>
+        <li>
+          <Link passHref href="#">
+            Joias
           </Link>
         </li>
       </ul>
