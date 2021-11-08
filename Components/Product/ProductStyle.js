@@ -32,6 +32,11 @@ const ProductStyle = styled.div`
       color: gray;
     }
 
+    div.payButton{
+      margin: 20px 30px;
+      
+    }
+
     div.product-unavailable {
       background-color: #d12a2a;
       text-align: center;

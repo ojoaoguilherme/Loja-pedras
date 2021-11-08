@@ -24,7 +24,7 @@ export default function Product({ product }) {
             <p>Indisponível</p>
           </div>
         ) : (
-          <div>
+          <div className='payButton'>
             <PayButton product={product} />
           </div>
         )}

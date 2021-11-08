@@ -6,6 +6,9 @@ const LogoStyle = styled.div`
   &:hover{
     cursor: pointer;
   }
+  height: 100px;
+  display: flex;
+  align-items: center;
 `
 
 export default function Logo() {

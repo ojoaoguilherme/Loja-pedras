@@ -7,9 +7,10 @@ const FooterStyle = styled.footer`
   div.content {
     width: 90%;
     margin: 0 auto;
-    padding: 30px 0;
     text-align: center;
-
+    h1{
+      width: 100%;
+    }
     ul {
       display: flex;
       align-items: center;
