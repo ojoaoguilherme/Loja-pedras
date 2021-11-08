@@ -4,7 +4,6 @@ import createRecord from "../../lib/orderAPI";
 import updateProductStatus from "../../lib/updateProduct";
 
 export default function PayButton({ product }) {
-  console.log(product.id);
   return (
     <div>
       <PayPalButton

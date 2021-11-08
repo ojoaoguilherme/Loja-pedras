@@ -86,7 +86,6 @@ query MyQuery($param: String) {
 
 export async function getStaticProps({ params }) {
   const slug = params.slug;
-  console.log(slug);
   const data = await request({
     query: PRODUCT_INFO,
     variables: { param: slug },
