@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 const ProductsListStyle = styled.div`
+  width: 90%;
   display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
   text-align: center;
-  width: 80%;
   margin: 15px auto;
 
   .container {
+    width: 90%;
     background-color: #ffffff;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+
     border-radius: 10px;
     .valor {
       font-size: 32px;
@@ -36,15 +39,43 @@ const ProductsListStyle = styled.div`
       padding: 7px 5px;
       border-radius: 5px;
       box-shadow: 0px 2px 2px 2px gray;
-      width: 45%;
+      max-width: 175px;
       margin: 10px auto;
     }
   }
 
-  @media (max-width: 460px) {
-    width: 360px;
-    grid-template-columns: auto;
+  @media (max-width: 920px){
+    grid-template-columns: auto auto auto;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: auto auto;
+    .container {
+      div.product-unavailable {
+        min-width: 30%;
+      }
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 426px) {
+    grid-template-columns: auto;
+    width: 90%;
+    margin: 35px auto;
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+
+      div.product-unavailable {
+        min-width: 40%;
+      }
+    }
+  }
+
+  
 `;
 
 export default ProductsListStyle;

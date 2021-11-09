@@ -15,16 +15,18 @@ export default function Product({ product }) {
         />
       </div>
       <div className="text-content">
-        <h3>
-          {product.name} - R${product.price}
-        </h3>
-        <StructuredText data={product.description.value} />
+        <div className="detailed-text">
+          <h3>
+            {product.name} - R${product.price}
+          </h3>
+          <StructuredText data={product.description.value} />
+        </div>
         {product.bought ? (
           <div className="product-unavailable">
-            <p>Indisponível</p>
+            <p>Indisponível ja foi comprada</p>
           </div>
         ) : (
-          <div className='payButton'>
+          <div className="payButton">
             <PayButton product={product} />
           </div>
         )}
