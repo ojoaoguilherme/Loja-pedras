@@ -12,24 +12,29 @@ export default function Product({ product }) {
         <Image
           data={product.image.responsiveImage}
           alt={product.image.responsiveImage.alt}
+          sizes={product.image.sizes}
+          height={product.image.height}
+          width={product.image.width}
         />
       </div>
       <div className="text-content">
         <div className="detailed-text">
-          <h3>
+          <h2>
             {product.name} - R${product.price}
-          </h3>
+          </h2>
           <StructuredText data={product.description.value} />
         </div>
-        {product.bought ? (
-          <div className="product-unavailable">
-            <p>Indisponível ja foi comprada</p>
-          </div>
-        ) : (
-          <div className="payButton">
-            <PayButton product={product} />
-          </div>
-        )}
+        <div className="cointaner-buttons">
+          {product.bought ? (
+            <div className="product-unavailable">
+              <p>Indisponível ja foi comprada</p>
+            </div>
+          ) : (
+            <div className="payButton">
+              <PayButton product={product} />
+            </div>
+          )}
+        </div>
       </div>
     </ProductStyle>
   );

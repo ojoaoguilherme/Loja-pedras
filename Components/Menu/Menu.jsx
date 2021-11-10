@@ -1,4 +1,3 @@
-import Hamburger from "../Hamburger/Hamburger";
 import Logo from "../Logo/Logo";
 import Navbar from "../Navbar/Navbar";
 import MenuStyle from "./MenuStyle";

@@ -6,7 +6,7 @@ const LogoStyle = styled.div`
   &:hover{
     cursor: pointer;
   }
-  height: 100px;
+  padding: 50px 0;
   display: flex;
   align-items: center;
 `

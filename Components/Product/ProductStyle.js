@@ -1,22 +1,24 @@
 import styled from "styled-components";
 
 const ProductStyle = styled.div`
+  width: 80%;
+  margin: 50px auto;
   display: flex;
-  /* justify-content: ; */
-  width: 86%;
-  margin: 35px auto;
+  justify-content: space-evenly;
 
   .image-container {
-    margin: 25px 55px 0px 0px;
+    margin: 0 55px 65px 0px;
     img {
+      width: 50%;
       border-radius: 10px;
     }
   }
 
   .text-content {
-    width: 90%;
-    margin: 10px auto;
     display: flex;
+    /* width: 90%; */
+    justify-content: space-between;
+    margin: 0 auto;
 
     h3 {
       text-align: center;
@@ -28,75 +30,127 @@ const ProductStyle = styled.div`
     }
     ul {
       padding-left: 30px;
-    }
-    blockquote {
-      margin: 3px;
-      margin-left: 30px;
-      p {
-        padding: 7px;
+      margin: 20px 0;
+      li {
+        margin-bottom: 7px;
       }
-      color: gray;
-    }
-
-    div.product-unavailable {
-      width: auto;
-      height: 45px;
-      background-color: #d12a2a;
-      text-align: center;
-      color: #f3f3f3;
-      font-size: 20px;
-      text-decoration: solid;
-      letter-spacing: 0.7px;
-      padding: 10px 10px;
-      border-radius: 5px;
-      box-shadow: 0px 2px 2px 2px gray;
-      margin: 10px auto;
-    }
-
-    div.payButton {
-      width: 25%;
-      margin: 0 auto;
     }
   }
-  @media (max-width: 768px) {
-    flex-direction: column;
+  blockquote {
+    margin: 3px;
+    margin-left: 30px;
+    p {
+      padding: 7px;
+    }
+    color: gray;
+  }
+
+  div.product-unavailable {
+    background-color: #d12a2a;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 20px;
+    text-decoration: solid;
+    letter-spacing: 0.7px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px gray;
+    margin: 10px auto;
+  }
+
+  div.cointaner-buttons {
+  }
+
+  @media (max-width: 973px) {
     width: 90%;
-    margin: 45px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 35px auto;
 
     div.image-container {
       width: 85%;
       margin: 0 auto;
     }
     div.text-content {
+      width: 85%;
       flex-direction: column;
 
-      margin: 35px auto;
-      width: 90%;
-      h3 {
-        text-align: center;
+      div.detailed-text {
+        margin: 20px auto;
+        h2 {
+          margin: 10px;
+          text-align: center;
+        }
+        h3 {
+        }
+        h4 {
+          text-align: center;
+          margin: 7px 0;
+          font-size: 1.1rem;
+        }
+        h5 {
+          text-align: center;
+          font-size: 1.1rem;
+        }
+        h5 + p {
+          text-align: center;
+          margin: 8px;
+        }
       }
     }
 
-    div.detailed-text {
-      margin: 20px auto;
-    }
-
-    div.payButton {
-      width: 45%;
+    .payButton,
+    .product-unavailable {
+      width: 50%;
+      margin: 0 auto;
     }
   }
+
   @media (max-width: 426px) {
+    display: flex;
     margin: 35px auto;
+    width: 95%;
+
     div.text-content {
-      flex-direction: column;
-      padding: 0;
       width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
     }
+
     div.detailed-text {
-      h3 {
-        margin: 0;
-        padding: 0;
+      h2 {
+        font-size: 1.5rem;
         text-align: center;
+        margin-bottom: 5px 0;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      h4 {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+      h5 {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        text-align: center;
+      }
+      h5 + p,
+      h4 + p {
+        text-align: center;
+        font-size: 1.1rem;
+      }
+      ul {
+        margin: 20px 0;
+        li {
+          margin-bottom: 7px;
+        }
+      }
+
+      p {
+        font-size: 1rem;
       }
     }
 
@@ -106,7 +160,8 @@ const ProductStyle = styled.div`
     }
 
     div.payButton {
-      width: 95%;
+      width: 85%;
+      margin: 0 auto;
     }
   }
 `;
