@@ -7,7 +7,10 @@ export default function Home({ data }) {
     <div>
       <Head>
         <title>Loja de Pedras</title>
-        <meta name="description" content="Loja de pedras preciosas, brutas, lapidadas, joias e muito mais. Acesse para conhecer mais!" />
+        <meta
+          name="description"
+          content="Loja de pedras preciosas, brutas, lapidadas, joias e muito mais. Acesse para conhecer mais!"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Products products={data} />
@@ -44,7 +47,6 @@ query HomePage($limit: IntType){
 export async function getStaticProps() {
   const data = await request({
     query: HOMEPAGE_QUERY,
-    // variables: { limit: 10 },
   });
   return {
     props: { data }, // will be passed to the page component as props
