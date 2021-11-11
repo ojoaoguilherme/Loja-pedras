@@ -12,6 +12,7 @@
     "datocms-client": "^3.5.9",
     "graphql": "^15.6.1",
     "graphql-request": "^3.6.1",
+    "mercadopago": "^1.5.9",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-datocms": "^1.6.6",

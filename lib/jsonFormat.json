@@ -1,0 +1,73 @@
+{
+    "id": "04G17362FT6153740",
+    "intent": "CAPTURE",
+    "status": "COMPLETED",
+    "purchase_units": [
+        {
+            "reference_id": "72165407",
+            "amount": {
+                "currency_code": "BRL",
+                "value": "1.50"
+            },
+            "payee": {
+                "email_address": "sb-rbjc18027604@business.example.com",
+                "merchant_id": "M27TEGAPX7QLN"
+            },
+            "description": "Pinjente de Diamente",
+            "shipping": {
+                "name": {
+                    "full_name": "Maria Zezinha"
+                },
+                "address": {
+                    "address_line_1": "1234 Rua Main",
+                    "admin_area_2": "Rio De Janeiro",
+                    "admin_area_1": "RJ",
+                    "postal_code": "22021-001",
+                    "country_code": "BR"
+                }
+            },
+            "payments": {
+                "captures": [
+                    {
+                        "id": "74T44213AT354512A",
+                        "status": "COMPLETED",
+                        "amount": {
+                            "currency_code": "BRL",
+                            "value": "1.50"
+                        },
+                        "final_capture": true,
+                        "seller_protection": {
+                            "status": "ELIGIBLE",
+                            "dispute_categories": [
+                                "ITEM_NOT_RECEIVED",
+                                "UNAUTHORIZED_TRANSACTION"
+                            ]
+                        },
+                        "create_time": "2021-11-11T18:07:27Z",
+                        "update_time": "2021-11-11T18:07:27Z"
+                    }
+                ]
+            }
+        }
+    ],
+    "payer": {
+        "name": {
+            "given_name": "Maria",
+            "surname": "Zezinha"
+        },
+        "email_address": "sb-rwz4y8028780@personal.example.com",
+        "payer_id": "GYUJR76AJ8J48",
+        "address": {
+            "country_code": "BR"
+        }
+    },
+    "create_time": "2021-11-11T18:07:15Z",
+    "update_time": "2021-11-11T18:07:27Z",
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/04G17362FT6153740",
+            "rel": "self",
+            "method": "GET"
+        }
+    ]
+}
