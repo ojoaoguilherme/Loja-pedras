@@ -9,7 +9,6 @@ export default function ProductPage({ product }) {
   );
 }
 
-
 const LIST_PRODUCT_QUERY = `
 query MyQuery {
   allProducts {

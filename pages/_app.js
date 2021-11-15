@@ -22,9 +22,6 @@ html,body{
     background-color: ${theme.background.primary};
    
   }
-
-    
-
 `;
 
 function MyApp({ Component, pageProps }) {
